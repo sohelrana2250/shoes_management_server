@@ -30,7 +30,7 @@ function verifyToken(req, res, next) {
   next();
 }
 
-const uri = process.env.DATABASE_URL;
+const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.witzbq4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
 //username:projectone
 //password:xDkxbBrTYIm1lFpg
